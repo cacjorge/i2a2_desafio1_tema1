@@ -3,39 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redes Regenerativas - Tema 1</title>
+  <title>About - Dimono</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <style>
-    /* Custom styles for the login and password structure */
-    .login-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+    /* Custom styles for the about page */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
     }
 
-    .login-card {
-      width: 300px;
-      padding: 20px;
-      border-radius: 4px;
-      background-color: #ffffff;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px;
     }
 
-    .form-group {
+    .page-title {
+      font-size: 24px;
+      font-weight: 500;
       margin-bottom: 20px;
     }
 
-    .form-group label {
-      font-weight: 500;
-    }
-    /* Custom styles for the small link */
-    .small-link {
-        font-size: 12px;
-        color: #777777;
+    .about-text {
+      font-size: 16px;
+      line-height: 1.6;
     }
     .navbar {
       background-color: #f8f8f8;
@@ -120,9 +114,9 @@
   </style>
 </head>
 <body>
-  
-  <!-- Navbar -->
-  <nav class="navbar">
+
+<!-- Navbar -->
+<nav class="navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="logo.png" alt="Logo" height="30">
@@ -147,51 +141,27 @@
     });
   </script>
 
- <!-- Login and Password Structure -->
-  <div class="login-container">
-    <div class="login-card">
-      <form id="login-form">
-        <div class="form-group">
-          <label for="username">Usuário</label>
-          <input type="text" class="form-control" id="username" placeholder="Preencha com Usuário">
-        </div>
-        <div class="form-group">
-          <label for="password">Senha</label>
-          <input type="password" class="form-control" id="password" placeholder="Preencha com Senha">
-        </div>
-        <div class="form-group d-flex justify-content-between align-items-center">
-          <button type="submit" class="btn btn-primary">Entrar</button>
-          <a href="forgotpassword.html" class="small-link">Esqueci a Senha</a>
-        </div>
-      </form>
-    </div>
+
+  <div class="container">
+    <h1 class="page-title">About Dimono</h1>
+    <p class="about-text">
+      Welcome to Dimono, your one-stop shop for pet dinosaurs! We are passionate about bringing the joy and excitement of owning a dinosaur right to your doorstep.
+    </p>
+    <p class="about-text">
+      At Dimono, we offer a wide variety of dinosaur species, ranging from cute and cuddly herbivores to fierce and majestic carnivores. Each dinosaur is carefully selected and trained to ensure they make wonderful companions for dinosaur enthusiasts of all ages.
+    </p>
+    <p class="about-text">
+      Our team of experts is dedicated to providing the highest level of care for our dinosaurs. We prioritize their well-being and take great pride in maintaining their health and happiness. You can trust that when you adopt a dinosaur from Dimono, you are providing a loving home for a prehistoric friend.
+    </p>
+    <p class="about-text">
+      Whether you are a seasoned dinosaur enthusiast or a first-time owner, our knowledgeable staff is here to assist you every step of the way. We offer guidance on dinosaur care, feeding, and creating a suitable habitat to ensure a rewarding and fulfilling experience.
+    </p>
+    <p class="about-text">
+      We also provide a range of dinosaur-related products, including food, toys, and accessories, to enhance the bond between you and your dinosaur companion. Additionally, we offer training services and educational resources to help you and your dinosaur build a strong and meaningful relationship.
+    </p>
+    <p class="about-text">
+      Thank you for choosing Dimono. We look forward to helping you find the perfect pet dinosaur that will bring joy and adventure into your life. Feel free to contact us with any questions or inquiries - our team is always ready to assist you.
+    </p>
   </div>
-  
-  
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Handle form submission
-      $('#login-form').submit(function(event) {
-        event.preventDefault(); // Prevent form from submitting normally
-  
-        // Perform login validation (you can replace this with your own logic)
-        var username = $('#username').val();
-        var password = $('#password').val();
-  
-        // Check if username and password are valid
-        if (username === 'Usuário' && password === 'Senha') {
-          // Redirect to products page
-          window.location.href = 'products.html';
-        } else {
-          // Display error message or perform other actions
-          alert('Invalid username or password');
-        }
-      });
-    });
-  </script>
 </body>
 </html>
