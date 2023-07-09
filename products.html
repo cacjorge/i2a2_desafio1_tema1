@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redes Regenerativas - Tema 1</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <style>
+    /* Custom styles for the products page */
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .product-card {
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .product-card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .product-name {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .product-id {
+      color: #777777;
+    }
+  
+    .product-description {
+      color: #555555;
+    }
+  
+    .product-price {
+      font-weight: bold;
+      color: #333333;
+      text-align: center;
+    }
+  
+    .buy-button {
+      margin-top: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+    .buy-button:hover {
+      background-color: #45a049;
+    }
+  
+    .buy-button:focus {
+      outline: none;
+    }
+  </style>
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Logo" height="30">
+      DinoMundo - Tudo para o seu dinossauro se sentir em casa!
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <!-- Products -->
+  <div class="products-container">
+    <div class="product-card">
+      <img src="product1.jpg" alt="Product 1">
+      <div class="product-details">
+        <div class="product-name">Coleira </div>
+        <div class="product-id">ID: 001</div>
+        <div class="product-description">Esta coleira resistente foi projetada especialmente  de estimação. Com um ajuste confortável e seguro, esta coleira é perfeita para manter seu braquiossauro seguro durante os passeios.</div>
+        <div class="product-price">R$ 19,90</div>
+        <button class="buy-button">COMPRAR</button>
+      </div>
+    </div>
+    <!-- Repeat the above card structure for other products -->
+    <!-- Product 2 -->
+    <div class="products-container">
+    <div class="product-card">
+      <img src="product2.jpg" alt="Product 2">
+      <div class="product-details">
+        <div class="product-name">Escova </div>
+        <div class="product-id">ID: 002</div>
+        <div class="product-description">Esta escova de cerdas macias é perfeita para manter o pelo do seu braquiossauro limpo e saudável. Com um cabo longo e ergonômico, esta escova é fácil de usar e ajuda a remover sujeira e pelos soltos.</div>
+        <div class="product-price">R$ 39,90</div>
+        <button class="buy-button">COMPRAR</button>
+      </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="products-container">
+        <div class="product-card">
+          <img src="product3.jpg" alt="Product 3">
+          <div class="product-details">
+            <div class="product-name">Brinquedo </div>
+            <div class="product-id">ID: 003</div>
+            <div class="product-description">Este brinquedo resistente foi projetado para suportar as brincadeiras de um braquiossauro de estimação. Com texturas e formas interessantes, este brinquedo é perfeito para manter seu braquiossauro entretido e estimulado.</div>
+            <div class="product-price">R$ 49,90</div>
+            <button class="buy-button">COMPRAR</button>
+          </div>
+        </div>
+    <!-- Product 4 -->
+    <div class="products-container">
+        <div class="product-card">
+          <img src="product4.jpg" alt="Product 4">
+          <div class="product-details">
+            <div class="product-name">Cama </div>
+            <div class="product-id">ID: 004</div>
+            <div class="product-description">Esta cama macia e confortável é perfeita para o seu braquiossauro descansar. Com um tamanho adequado para acomodar um braquiossauro de estimação, esta cama é feita com materiais de alta qualidade e é fácil de limpar.</div>
+            <div class="product-price">R$ 159,90</div>
+            <button class="buy-button">COMPRAR</button>
+          </div>
+        </div>
+    <!-- Product 5 -->
+    <div class="products-container">
+        <div class="product-card">
+          <img src="product5.jpg" alt="Product 5">
+          <div class="product-details">
+            <div class="product-name">Shampoo </div>
+            <div class="product-id">ID: 005</div>
+            <div class="product-description">Este shampoo suave foi formulado especialmente para a pele sensível de um braquiossauro de estimação. Com ingredientes naturais e sem fragrâncias fortes, este shampoo é perfeito para manter o pelo do seu braquiossauro limpo e saudável.</div>
+            <div class="product-price">R$ 69,90</div>
+            <button class="buy-button">COMPRAR</button>
+          </div>
+        </div>
+    <!-- Product 6 -->
+    <div class="products-container">
+        <div class="product-card">
+          <img src="product6.jpg" alt="Product 6">
+          <div class="product-details">
+            <div class="product-name">Guia </div>
+            <div class="product-id">ID: 006</div>
+            <div class="product-description">“O Guia Definitivo para Cuidar do seu Dinossauro de Estimação” é o livro perfeito para quem tem ou deseja ter um dinossauro como animal de estimação. Escrito por especialistas em cuidados com dinossauros, este livro abrange tudo o que você precisa saber para manter seu dinossauro saudável e feliz.
+
+                Com capítulos sobre alimentação, exercícios, saúde, comportamento e muito mais, este livro é repleto de informações úteis e dicas práticas. Além disso, inclui belas fotografias e ilustrações para ajudar a tornar o cuidado com o seu dinossauro ainda mais divertido.
+                
+                Se você quer dar ao seu dinossauro de estimação o melhor cuidado possível, então este é o livro para você!</div>
+            <div class="product-price">R$ 59,90</div>
+            <button class="buy-button">COMPRAR</button>
+          </div>
+        </div>
+    <!-- Product 7 -->
+    <div class="products-container">
+        <div class="product-card">
+          <img src="product7.jpg" alt="Product 7">
+          <div class="product-details">
+            <div class="product-name">Suplemento Nutricional </div>
+            <div class="product-id">ID: 007</div>
+            <div class="product-description">Este suplemento nutricional foi formulado especialmente para atender às necessidades nutricionais específicas de um braquiossauro de estimação. Enriquecido com vitaminas e minerais essenciais, este suplemento é perfeito para complementar a dieta do seu braquiossauro.</div>
+            <div class="product-price">R$ 99,90</div>
+            <button class="buy-button">COMPRAR</button>
+          </div>
+        </div>
+
+    <!-- Product 8 -->
+    <div class="products-container">
+        <div class="product-card">
+          <img src="product8.jpg" alt="Product 8">
+          <div class="product-details">
+            <div class="product-name">Acessório para Exercícios de Braquiossauros</div>
+            <div class="product-id">ID: 008</div>
+            <div class="product-description">Este acessório foi projetado para ajudar seu braquiossauro a se exercitar e manter-se saudável. Com diferentes níveis de dificuldade e desafios, este acessório é perfeito para manter seu braquiossauro ativo e estimulado.</div>
+            <div class="product-price">R$ 169,90</div>
+            <button class="buy-button">COMPRAR</button>
+          </div>
+        </div>
+    <!-- Product 9 -->
+    <div class="products-container">
+        <div class="product-card">
+          <img src="product9.jpg" alt="Product 9">
+          <div class="product-details">
+            <div class="product-name">Ração </div>
+            <div class="product-id">ID: 009</div>
+            <div class="product-description">Esta ração especial foi formulada para atender às necessidades nutricionais específicas de um braquiossauro de estimação. Feita com ingredientes naturais e enriquecida com vitaminas e minerais, esta ração é perfeita para manter seu braquiossauro saudável e forte.</div>
+            <div class="product-price">R$ 139,90</div>
+            <button class="buy-button">COMPRAR</button>
+          </div>
+        </div>
+    <!-- Product 10 -->
+    <div class="products-container">
+        <div class="product-card">
+          <img src="product10.jpg" alt="Product 10">
+          <div class="product-details">
+            <div class="product-name">Casa </div>
+            <div class="product-id">ID: 010</div>
+            <div class="product-description">Esta casa espaçosa foi projetada especialmente  de estimação. Com um teto alto e bastante espaço para se movimentar, esta casa é perfeita para o seu braquiossauro relaxar e descansar. Feita com materiais resistentes e duráveis, esta casa é fácil de limpar e manter.</div>
+            <div class="product-price">R$ 599,90</div>
+            <button class="buy-button">COMPRAR</button>
+          </div>
+        </div>
+  </div>
+
+</body>
+</html>
